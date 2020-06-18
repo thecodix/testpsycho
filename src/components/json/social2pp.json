@@ -133,7 +133,7 @@
       "modelo": "1"
     },
     "responses": [
-      { "text": "La reprocidad" },
+      { "text": "La reciprocidad" },
       { "text": "El atractivo físico", "correct": true },
       { "text": "La semejanza" }
     ]
@@ -309,6 +309,11 @@
   {
     "text":
     "En el desarrollo personal del altruismo y la conducta pro social intervienen fundamentalmente tres procesos básicos : la maduración socio-cognitiva, la socialización y",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "El aprendizaje a través de la interacción con los iguales", "correct": true },
       { "text": "La eficacia biológica inclusiva" },
@@ -318,6 +323,11 @@
   {
     "text":
     "En que marco teórico encajaría mejor una explicación de la atracción interpersonal basada en la sensación de que una relación con otra persona nos aporta más beneficios que costes y que dicha razón coste/ beneficio es buena atendiendo a las alternativas",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "En las teorías de refuerzo" },
       { "text": "En la teoría del equilibrio de Heider" },
@@ -327,6 +337,11 @@
   {
     "text":
     "Teoria de justificación del sistema, los estereoripos negativos sobre grupos socialmente desfavorecidos",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Tienen un fondo de verdad que relaja la naturaleza real de los miembros de las minorías estereotipadas", "correct": true },
       { "text": "Son compartidos tambien por los miembros de los grupos desfavorecidos, a pesar que les perjudican" },
@@ -336,6 +351,11 @@
   {
     "text":
     "Los estudios psicosociales sobre bullying han encontrado que los niños que presencian episodios de acoso con frecuencia mantienen actitudes personales contrarias a este tipo de acciones ¿cuál de estos procesos NO sería relevante para explicar esta paradoja?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "El efecto de mera exposición", "correct": true },
       { "text": "La ignorancia pluralizada" },
@@ -345,6 +365,11 @@
   {
     "text":
     "Según el modelo de activación y coste recompensa, ¿en qué caso se produciría el fenómeno de culpabilización de la víctima?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Cuando costes ayudar son altos y los de no ayudar bajos" },
       { "text": "Cuando tanto costes de ayudar como los de no ayudar son altos", "correct": true },
@@ -354,6 +379,11 @@
   {
     "text":
     "La investigación sobre las diferencias de género en la conducta de ayuda sugiere que:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Los hombres ayudan más que las mujeres" },
       { "text": "Las mujeres ayudan más que los hombres" },
@@ -363,6 +393,11 @@
   {
     "text":
     "¿Cual de las siguientes afirmaciones es propia de la hostilidad heterosexual, de acuerdo con la teoría del sexismo ambivalente (Glick y Fiske, 1996)?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Las mujeres no tienen competencia para triunfar en el mundo laboral por lo que tienen salarios más bajos que los hombres" },
       { "text": "Es natural que los hombres tengan más poder que las mujeres" },
@@ -372,6 +407,11 @@
   {
     "text":
     "La investigación de Levy y cols (2002) sobre la percepción del envejecimiento mostró que:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "La autoesteropia tiene un efecto más fuerte que la discriminación en adultos mayores", "correct": true },
       { "text": "La autoestima influye en la esperanza de vida de los adultos" },
@@ -381,6 +421,11 @@
   {
     "text":
     "Si una psicóloga social decide asumir el rol de investigadora aplicada tendrá que:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Centrarse en el análisis de la situación que demananda la modificación y tratar de distanciarse", "correct": true },
       { "text": "Tomar partido por su cliente y asumir sus reivindicaciones" },
@@ -390,6 +435,11 @@
   {
     "text":
     "Cual de las siguientes afirmaciones sobre el modelo PATH de Buunk y Van vugt (2007) es falsa:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "El modelo teórico planteado en la tercera fase debe seguir el principio de parsimonia" },
       { "text": "Este modelo tiene la ventaja de que puede aplicarse a todo tipo de problemas sociales", "correct": true },
@@ -399,6 +449,11 @@
   {
     "text":
     "Si hiciéramos un experimento en el que introdujésemos de repente humo en una sala donde los participantes (ajenos al objetivo y procedimiento) estuvieran sentados esperando, ¿cuando sería mas probable que saliesen de la sala para avisar de la presencia de humo?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Cuando en la sala hubiese un único participante esperando", "correct": true },
       { "text": "Cuando en la sala hubiese tres participantes juntos esperando" },
@@ -408,6 +463,11 @@
   {
     "text":
     "Los estereotipos influyen en la autoestima de las personas que los mantienen porque fomentan una visión positiva del grupo al que pertenecen, ¿cómo se denomina el efecto?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Justificación del status quo" },
       { "text": "Amenaza al estereotipo", "correct": true },
@@ -417,6 +477,11 @@
   {
     "text":
     "El término contacto extendido se refiere al caso en que una persona",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
     "responses": [
       { "text": "Mantiene un mayor numero de contactos con miembros de un mismo exogrupo" },
       { "text": "Mantiene contactos con miembros de distintos grupos" },

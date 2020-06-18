@@ -47,10 +47,14 @@
               <h4>Tests examen 2020</h4>
               <!--progress-->
               <div class="progressContainer">
-                <progress class="progress is-info is-small"
-                          :value="(questionIndex/quiz.questions.length)*100"
-                          max="100">{{(questionIndex/quiz.questions.length)*100}}%
-                </progress>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar"
+                       v-bind:style="{ width: (corrects/quiz.questions.length)*100 + '%' }"
+                       aria-valuemin="0" aria-valuemax="100">{{corrects}}</div>
+                  <div class="progress-bar bg-danger" role="progressbar"
+                       v-bind:style="{ width: (incorrects/quiz.questions.length)*100 + '%' }"
+                       aria-valuemin="0" aria-valuemax="100">{{incorrects}}</div>
+                </div>
                 <p>{{questionIndex+1}} de {{quiz.questions.length}} preguntas</p>
                 <p>Tiempo restante: {{timeLeft}}</p>
               </div>
@@ -70,7 +74,7 @@
               <div class="option"
                    v-for="(response, index)
                           in quiz.questions[questionIndex].responses"
-                   @click="selectOption(index)"
+                   @click="selectOption(index, response)"
                    :class="{ 'is-correct':
                               userResponses[questionIndex] == index
                               && response.correct,
@@ -127,6 +131,17 @@
             <h2 class="title">
               ¡Buen trabajo!
             </h2>
+            <div class="progressContainer">
+
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                     v-bind:style="{ width: (corrects/quiz.questions.length)*100 + '%' }"
+                     aria-valuemin="0" aria-valuemax="100">{{corrects}}</div>
+                <div class="progress-bar bg-danger" role="progressbar"
+                     v-bind:style="{ width: (incorrects/quiz.questions.length)*100 + '%' }"
+                     aria-valuemin="0" aria-valuemax="100">{{incorrects}}</div>
+              </div>
+            </div>
             <p class="subtitle">
               Puntuación total: {{ score() }} / 10
             </p>
@@ -159,6 +174,8 @@ export default {
     return {
       chosenQuiz: false,
       title: '',
+      corrects: 0,
+      incorrects: 0,
       quiz: {
         user: 'Dave',
         questions: {},
@@ -166,15 +183,15 @@ export default {
       social: {
         title: 'Psicología Social',
         jsonFile: EXAM_SOCIAL_JSON,
-        numQuestions: 4,
+        numQuestions: 20,
         time: 40 * 60, // in seconds
         plusScore: 0.45,
         minusScore: 0.20,
       },
       emocion: {
-        title: 'Psicología de la Emoción',
+        title: 'P. de la Emoción',
         jsonFile: EXAM_EMOCION_JSON,
-        numQuestions: 4,
+        numQuestions: 40,
         time: 20 * 60, // in seconds
         plusScore: 0.25,
         minusScore: 0.25,
@@ -199,7 +216,10 @@ export default {
   },
   methods: {
     restart() {
+      this.chosenQuiz = false;
       this.questionIndex = 0;
+      this.corrects = 0;
+      this.incorrects = 0;
       this.userResponses = Array(this.quiz.questions.length).fill(null);
       this.time = 50 * 60;
     },
@@ -211,14 +231,31 @@ export default {
         .slice(0, subject.numQuestions);
       this.userResponses = Array(subject.numQuestions).fill(null);
       this.time = subject.time;
+      this.corrects = 0;
+      this.incorrects = 0;
+      this.blank = 0;
       this.plusScore = subject.plusScore;
       this.minusScore = subject.minusScore;
     },
-    selectOption(index) {
+    selectOption(index, response) {
+      if (this.userResponses[this.questionIndex] !== null
+        && this.userResponses[this.questionIndex] !== index) {
+        if (response.correct) {
+          this.corrects += 1;
+          this.incorrects -= 1;
+        } else {
+          this.corrects -= 1;
+          this.incorrects += 1;
+        }
+      } else if (this.userResponses[this.questionIndex] !== index) {
+        if (response.correct) {
+          this.corrects += 1;
+        } else {
+          this.incorrects += 1;
+        }
+      }
       // eslint-disable-next-line no-undef
       Vue.set(this.userResponses, this.questionIndex, index);
-      const q = this.quiz.questions[this.questionIndex];
-      if (q.responses[index].correct) q.responses.text = 'lol';
       // console.log(this.userResponses);
     },
     next() {
@@ -350,7 +387,7 @@ export default {
 
   .questionBox header {
     background: rgba(0, 0, 0, 0.025);
-    padding: 1.5rem;
+    padding: 1.2rem;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -361,6 +398,10 @@ export default {
   }
 
   .questionBox header .progressContainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .progressContainer {
     width: 60%;
     margin: 0 auto;
   }

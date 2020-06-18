@@ -216,6 +216,18 @@
     ]
   },
   {
+    "text": "Una forma de afrontamiento del asco es el distanciamiento acompañado por una expulsión de los estímulos aversivos:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
     "text": "El asco es una compleja emoción que probablemente tiene vínculos con los estados fóbicos:",
     "fecha": {
       "mes": "Septiembre",
