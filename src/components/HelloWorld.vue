@@ -12,13 +12,38 @@
                     leave-active-class="animated zoomOut"
                     mode="out-in">
 
+          <!--chooseQuiz-->
+          <div v-if="!chosenQuiz"
+               v-bind:key="questionIndex"
+               class="questionContainer">
+
+            <header>
+              <h2 class="title is-6">Elige asignatura</h2>
+            </header>
+
+            <!--options-->
+            <div class="optionContainer">
+              <a class="button actionButton option"
+                 v-on:click="chooseSubject(social)">
+                Psicología Social
+              </a>
+              <a class="button actionButton option"
+                 v-on:click="chooseSubject(emocion)">
+                Psicología de la Emoción
+              </a>
+            </div>
+            <!--/options-->
+
+          </div>
+          <!--/chooseQuiz-->
+
           <!--qusetionContainer-->
           <div class="questionContainer"
-               v-if="questionIndex<quiz.questions.length"
+               v-if="chosenQuiz && questionIndex<quiz.questions.length"
                v-bind:key="questionIndex">
 
             <header>
-              <h1 class="title is-6">Psicología social</h1>
+              <h1 class="title is-6">{{title}}</h1>
               <h4>Tests examen 2020</h4>
               <!--progress-->
               <div class="progressContainer">
@@ -34,6 +59,11 @@
 
             <!-- questionTitle -->
             <p class="titleContainer title">{{ quiz.questions[questionIndex].text }}</p>
+            <div class="titleDate"
+               v-if="quiz.questions[questionIndex].fecha">
+               {{ quiz.questions[questionIndex].fecha.mes }} -
+               {{ quiz.questions[questionIndex].fecha.year }}
+            </div>
 
             <!-- quizOptions -->
             <div class="optionContainer">
@@ -59,7 +89,9 @@
               <nav class="pagination" role="navigation" aria-label="pagination">
 
                 <!-- back button -->
-                <a class="button actionButton" v-on:click="prev()" :disabled="questionIndex < 1">
+                <a class="button actionButton"
+                   v-on:click="prev()"
+                   :disabled="questionIndex < 1">
                   Anterior
                 </a>
 
@@ -79,7 +111,7 @@
           <!--/questionContainer-->
 
           <!--quizCompletedResult-->
-          <div v-if="questionIndex === quiz.questions.length"
+          <div v-if="chosenQuiz && questionIndex === quiz.questions.length"
                v-bind:key="questionIndex"
                class="quizCompleted has-text-centered">
 
@@ -116,18 +148,39 @@
 </template>
 
 <script>
-import EXAM_JSON from './json/social2pp.json';
+import EXAM_SOCIAL_JSON from './json/social2pp.json';
+import EXAM_EMOCION_JSON from './json/emocion.json';
+
+const numQuestions = 2;
 
 export default {
   // el: '#app',
   data() {
     return {
+      chosenQuiz: false,
+      title: '',
       quiz: {
         user: 'Dave',
-        questions: EXAM_JSON.sort(() => Math.random() - 0.5).slice(0, 20),
+        questions: {},
+      },
+      social: {
+        title: 'Psicología Social',
+        jsonFile: EXAM_SOCIAL_JSON,
+        numQuestions: 4,
+        time: 40 * 60, // in seconds
+        plusScore: 0.45,
+        minusScore: 0.20,
+      },
+      emocion: {
+        title: 'Psicología de la Emoción',
+        jsonFile: EXAM_EMOCION_JSON,
+        numQuestions: 4,
+        time: 20 * 60, // in seconds
+        plusScore: 0.25,
+        minusScore: 0.25,
       },
       questionIndex: 0,
-      userResponses: Array(20).fill(null),
+      userResponses: Array(numQuestions).fill(null),
       isActive: false,
       form: {
         selected: '',
@@ -150,6 +203,17 @@ export default {
       this.userResponses = Array(this.quiz.questions.length).fill(null);
       this.time = 50 * 60;
     },
+    chooseSubject(subject) {
+      this.chosenQuiz = true;
+      this.title = subject.title;
+      this.quiz.questions = subject.jsonFile
+        .sort(() => Math.random() - 0.5)
+        .slice(0, subject.numQuestions);
+      this.userResponses = Array(subject.numQuestions).fill(null);
+      this.time = subject.time;
+      this.plusScore = subject.plusScore;
+      this.minusScore = subject.minusScore;
+    },
     selectOption(index) {
       // eslint-disable-next-line no-undef
       Vue.set(this.userResponses, this.questionIndex, index);
@@ -158,13 +222,15 @@ export default {
       // console.log(this.userResponses);
     },
     next() {
-      // eslint-disable-next-line no-plusplus
-      if (this.questionIndex < this.quiz.questions.length) this.questionIndex++;
+      if (this.questionIndex < this.quiz.questions.length) {
+        this.questionIndex += 1;
+      }
     },
 
     prev() {
-      // eslint-disable-next-line no-plusplus
-      if (this.quiz.questions.length > 0) this.questionIndex--;
+      if (this.questionIndex > 0) {
+        this.questionIndex -= 1;
+      }
     },
     // Return "true" count in userResponses
     score() {
@@ -177,17 +243,17 @@ export default {
           ] !== 'undefined'
           && this.quiz.questions[i].responses[this.userResponses[i]].correct
         ) {
-          score += 0.45;
+          score += this.plusScore;
         }
         if (
           typeof this.quiz.questions[i].responses[
             this.userResponses[i]] !== 'undefined'
           && !this.quiz.questions[i].responses[this.userResponses[i]].correct
         ) {
-          score -= 0.2;
+          score -= this.minusScore;
         }
       }
-      return Math.round(score * 100) / 100;
+      return Math.max(Math.round(score * 100) / 100, 0);
 
       // return this.userResponses.filter(function(val) { return val }).length;
     },
@@ -322,10 +388,16 @@ export default {
   }
 
   .questionBox .titleContainer {
-    text-align: center;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     text-align: left;
+  }
+  .questionBox .titleDate {
+    padding: 0 1.5rem 0 1.5rem;
+    text-align: left;
+    font-style: italic;
+    font-size: 0.8em;
+    color: darkgrey;
   }
 
   .questionBox .quizForm {
@@ -461,9 +533,9 @@ export default {
   @media screen and (min-width: 769px) {
     .questionBox {
       -webkit-box-align: center;
-      align-items: center;
+      /*align-items: center;*/
       -webkit-box-pack: center;
-      justify-content: center;
+      /*justify-content: center;*/
     }
 
     .questionBox .questionContainer {
