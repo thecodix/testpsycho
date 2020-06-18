@@ -1,58 +1,485 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <!--container-->
+    <section class="container">
+
+      <!--questionBox-->
+      <div class="questionBox" id="app">
+
+        <!-- transition -->
+        <transition :duration="{ enter: 500, leave: 300 }"
+                    enter-active-class="animated zoomIn"
+                    leave-active-class="animated zoomOut"
+                    mode="out-in">
+
+          <!--qusetionContainer-->
+          <div class="questionContainer"
+               v-if="questionIndex<quiz.questions.length"
+               v-bind:key="questionIndex">
+
+            <header>
+              <h1 class="title is-6">Psicología social</h1>
+              <h4>Tests examen 2020</h4>
+              <!--progress-->
+              <div class="progressContainer">
+                <progress class="progress is-info is-small"
+                          :value="(questionIndex/quiz.questions.length)*100"
+                          max="100">{{(questionIndex/quiz.questions.length)*100}}%
+                </progress>
+                <p>{{questionIndex+1}} de {{quiz.questions.length}} preguntas</p>
+                <p>Tiempo restante: {{timeLeft}}</p>
+              </div>
+              <!--/progress-->
+            </header>
+
+            <!-- questionTitle -->
+            <p class="titleContainer title">{{ quiz.questions[questionIndex].text }}</p>
+
+            <!-- quizOptions -->
+            <div class="optionContainer">
+              <div class="option"
+                   v-for="(response, index)
+                          in quiz.questions[questionIndex].responses"
+                   @click="selectOption(index)"
+                   :class="{ 'is-correct':
+                              userResponses[questionIndex] == index
+                              && response.correct,
+                              'is-wrong':
+                              userResponses[questionIndex] == index
+                              && !response.correct}"
+                   :key="index">
+                {{ index | charIndex }}. {{ response.text }}
+              </div>
+            </div>
+
+            <!--quizFooter: navigation and progress-->
+            <footer class="questionFooter">
+
+              <!--pagination-->
+              <nav class="pagination" role="navigation" aria-label="pagination">
+
+                <!-- back button -->
+                <a class="button actionButton" v-on:click="prev()" :disabled="questionIndex < 1">
+                  Anterior
+                </a>
+
+                <!-- next button -->
+                <a class="button actionButton" v-on:click="next()"
+                   :disabled="questionIndex===quiz.questions.length">
+                  {{ (userResponses[questionIndex]==null)?'Saltar pregunta':'Siguiente' }}
+                </a>
+
+              </nav>
+              <!--/pagination-->
+
+            </footer>
+            <!--/quizFooter-->
+
+          </div>
+          <!--/questionContainer-->
+
+          <!--quizCompletedResult-->
+          <div v-if="questionIndex === quiz.questions.length"
+               v-bind:key="questionIndex"
+               class="quizCompleted has-text-centered">
+
+            <!-- quizCompletedIcon: Achievement Icon -->
+            <span class="icon">
+                <i class="fa"
+                   :class="score()>3
+                   ?'fa-check-circle-o is-active':'fa-times-circle'">
+                </i>
+              </span>
+
+            <!--resultTitleBlock-->
+            <h2 class="title">
+              ¡Buen trabajo!
+            </h2>
+            <p class="subtitle">
+              Puntuación total: {{ score() }} / 10
+            </p>
+            <br>
+            <a class="button" @click="restart()">Volver a empezar <i class="fa fa-refresh"></i></a>
+            <!--/resultTitleBlock-->
+
+          </div>
+          <!--/quizCompetedResult-->
+
+        </transition>
+
+      </div>
+      <!--/questionBox-->
+
+    </section>
+    <!--/container-->
   </div>
 </template>
 
 <script>
+import EXAM_JSON from './json/social2pp.json';
+
 export default {
+  // el: '#app',
+  data() {
+    return {
+      quiz: {
+        user: 'Dave',
+        questions: EXAM_JSON.sort(() => Math.random() - 0.5).slice(0, 20),
+      },
+      questionIndex: 0,
+      userResponses: Array(20).fill(null),
+      isActive: false,
+      form: {
+        selected: '',
+      },
+      myToggle: false,
+      result: '',
+      show: false,
+      time: 50 * 60, // in seconds
+      timer: null,
+    };
+  },
+  filters: {
+    charIndex(i) {
+      return String.fromCharCode(97 + i);
+    },
+  },
+  methods: {
+    restart() {
+      this.questionIndex = 0;
+      this.userResponses = Array(this.quiz.questions.length).fill(null);
+      this.time = 50 * 60;
+    },
+    selectOption(index) {
+      // eslint-disable-next-line no-undef
+      Vue.set(this.userResponses, this.questionIndex, index);
+      const q = this.quiz.questions[this.questionIndex];
+      if (q.responses[index].correct) q.responses.text = 'lol';
+      // console.log(this.userResponses);
+    },
+    next() {
+      // eslint-disable-next-line no-plusplus
+      if (this.questionIndex < this.quiz.questions.length) this.questionIndex++;
+    },
+
+    prev() {
+      // eslint-disable-next-line no-plusplus
+      if (this.quiz.questions.length > 0) this.questionIndex--;
+    },
+    // Return "true" count in userResponses
+    score() {
+      let score = 0;
+      // eslint-disable-next-line no-plusplus
+      for (let i = 0; i < this.userResponses.length; i++) {
+        if (
+          typeof this.quiz.questions[i].responses[
+            this.userResponses[i]
+          ] !== 'undefined'
+          && this.quiz.questions[i].responses[this.userResponses[i]].correct
+        ) {
+          score += 0.45;
+        }
+        if (
+          typeof this.quiz.questions[i].responses[
+            this.userResponses[i]] !== 'undefined'
+          && !this.quiz.questions[i].responses[this.userResponses[i]].correct
+        ) {
+          score -= 0.2;
+        }
+      }
+      return Math.round(score * 100) / 100;
+
+      // return this.userResponses.filter(function(val) { return val }).length;
+    },
+    decrementOrAlert() {
+      if (this.time > 0) {
+        // eslint-disable-next-line no-plusplus
+        this.time--;
+        return;
+      }
+      // alert('Se acabó el tiempo!');
+      clearInterval(this.timer);
+    },
+  },
   name: 'HelloWorld',
   props: {
     msg: String,
+  },
+  computed: {
+    timeLeft() {
+      return `${this.minutes}:${this.seconds}`;
+    },
+    minutes() {
+      return String(Math.floor(this.time / 60)).padStart(2, '0');
+    },
+    seconds() {
+      return String(this.time % 60).padStart(2, '0');
+    },
+  },
+  created() {
+    this.timer = setInterval(this.decrementOrAlert, 1000);
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    background: #cfd8dc;
+    /* mocking native UI */
+    cursor: default !important;
+    /* remove text selection cursor */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* remove text selection */
+    user-drag: none;
+    /* disbale element dragging */
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .button {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .title,
+  .subtitle {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+  }
+
+  .animated {
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+  }
+
+  .container {
+    margin: 0 0.5rem;
+  }
+
+  .questionBox {
+    max-width: 30rem;
+    width: 30rem;
+    min-height: 30rem;
+    background: #fafafa;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .questionBox header {
+    background: rgba(0, 0, 0, 0.025);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .questionBox header h1 {
+    font-weight: bold;
+    margin-bottom: 1rem !important;
+  }
+
+  .questionBox header .progressContainer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .questionBox header .progressContainer > progress {
+    margin: 0;
+    border-radius: 5rem;
+    overflow: hidden;
+    border: none;
+    color: #3d5afe;
+    width: 100%;
+  }
+
+  .questionBox header .progressContainer > progress::-moz-progress-bar {
+    background: #3d5afe;
+  }
+
+  .questionBox header .progressContainer > progress::-webkit-progress-value {
+    background: #3d5afe;
+  }
+
+  .questionBox header .progressContainer > p {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  .questionBox .titleContainer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .questionBox .quizForm {
+    display: block;
+    white-space: normal;
+    height: 100%;
+    width: 100%;
+  }
+
+  .questionBox .quizForm .quizFormContainer {
+    height: 100%;
+    margin: 15px 18px;
+  }
+
+  .questionBox .quizForm .quizFormContainer .field-label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .questionBox .quizCompleted {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .questionBox .quizCompleted > .icon {
+    color: #ff5252;
+    font-size: 5rem;
+  }
+
+  .questionBox .quizCompleted > .icon .is-active {
+    color: #00e676;
+  }
+
+  .questionBox .questionContainer {
+    white-space: normal;
+    height: 100%;
+    width: 100%;
+  }
+
+  .questionBox .questionContainer .optionContainer {
+    margin-top: 12px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+  }
+
+  .questionBox .questionContainer .optionContainer .option {
+    border-radius: 10px;
+    padding: 9px 18px;
+    margin: 0 18px;
+    margin-bottom: 12px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.85);
+    border: transparent 1px solid;
+    text-align: left;
+  }
+
+  .questionBox .questionContainer .optionContainer .option.is-selected {
+    border-color: rgba(0, 0, 0, 0.25);
+    background-color: white;
+  }
+
+  .questionBox .questionContainer .optionContainer .option.is-correct {
+    border-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(186, 224, 120, 0.99);
+  }
+
+  .questionBox .questionContainer .optionContainer .option.is-wrong {
+    border-color: rgba(0, 0, 0, 0.25);
+    background-color: rgb(250, 140, 136);
+  }
+
+  /*.questionBox .questionContainer .optionContainer .option:hover {*/
+  /*  background-color: rgba(0, 0, 0, 0.1);*/
+  /*}*/
+
+  .questionBox .questionContainer .optionContainer .option:active {
+    -webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+  }
+
+  .questionBox .questionContainer .questionFooter {
+    background: rgba(0, 0, 0, 0.025);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  .questionBox .questionContainer .questionFooter .pagination {
+    margin: 15px 25px;
+  }
+
+  .pagination {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 0.25rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background: #eceff1;
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+  .actionButton:hover {
+    cursor: pointer;
+    background: #6298c7;
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .button.is-active {
+    background: #3d5afe;
+    color: white;
+    border-color: transparent;
+  }
+
+  .button.is-active:hover {
+    background: #0a2ffe;
+  }
+
+  @media screen and (min-width: 769px) {
+    .questionBox {
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+    }
+
+    .questionBox .questionContainer {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      height: auto !important;
+      border-radius: 6px 6px 0px 0px;
+    }
+  }
+
+
 </style>

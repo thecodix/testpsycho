@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Emoción 1",
+    "responses": [
+      { "text": "Son más ambivalentes en culturas colectivistas que en culturas individualistas" },
+      { "text": "Son uniformemente negativas en todas las culturas" },
+      { "text": "Son similares en diversas culturas", "correct": true }
+    ]
+  },
+  {
+    "text": "Emoción 2",
+    "responses": [
+      { "text": "Desahogarse mediante formas simbólicas" },
+      { "text": "Observar modelos no agresivos", "correct": true },
+      { "text": "Desaprender a comportarse agresivamente mediante castigo" }
+    ]
+  }
+]
