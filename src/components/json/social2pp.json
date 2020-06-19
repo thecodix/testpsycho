@@ -13,16 +13,16 @@
     ]
   },
   {
-    "text": "Estreategias desde el enfoque aprendizaje social para prevenir y reducir comportamiento agresivo",
+    "text": "¿Qué estrategias se han propuesto desde el enfoque del aprendizaje social para prevenir y reducir el comportamiento agresivo?",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
       "modelo": "1"
     },
     "responses": [
-      { "text": "Desahogarse mediante formas simbólicas" },
-      { "text": "Observar modelos no agresivos", "correct": true },
-      { "text": "Desaprender a comportarse agresivamente mediante castigo" }
+      { "text": "Desahogarse mediante formas simbólicas de agresión a modelos violentos para reducir la probabilidad de acciones agresivas reales" },
+      { "text": "Observar modelos no agresivos para adquirir pautas de conducta alternativas", "correct": true },
+      { "text": "Desaprender a comportarse agresivamente mediante el castigo para facilitar la extinción" }
     ]
   },
   {
@@ -84,21 +84,21 @@
   },
   {
     "text":
-    "En relación con la conceptualización del prejuicio en los últimos años algunos autores han señalado que el prejuicio",
+    "En relación con la conceptualización del prejuicio, en los últimos años algunos autores han señalado que el prejuicio",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
       "modelo": "1"
     },
     "responses": [
-      { "text": "Conduce invariablemente a la discriminacion abierta" },
-      { "text": "Depende del conexto social político y personal que desarrollan las relaciones impersonales", "correct": true },
-      { "text": "Es unifórmalmente hostil o negativo" }
+      { "text": "Conduce invariablemente a la discriminación abierta" },
+      { "text": "Depende del contexto social, político y cultural en el que se desarrollan las relaciones interpersonales", "correct": true },
+      { "text": "Es uniformemente hostil o negativo" }
     ]
   },
   {
     "text":
-    "Cual de los siguientes motivos sociales básicos se relaciona más estrechamente con la dependencia informativa",
+    "¿Con cuál de los siguientes motivos sociales básicos se relaciona más estrechamente con la dependencia informativa?",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -119,7 +119,7 @@
       "modelo": "1"
     },
     "responses": [
-      { "text": "El valor relaciónal percibido", "correct": true },
+      { "text": "El valor relacional percibido", "correct": true },
       { "text": "La reducción de la incertidumbre" },
       { "text": "El apoyo emocional" }
     ]
@@ -140,16 +140,16 @@
   },
   {
     "text":
-    "Cuál de las siguientes razones contribuye a explicar desde la perspectiva del condicionamiento clásico por qué la familiaridad predice la atracción",
+    "¿Cuál de las siguientes razones contribuye a explicar desde la perspectiva del condicionamiento clásico por qué la familiaridad predice la atracción?",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
       "modelo": "1"
     },
     "responses": [
-      { "text": "La incertidumbre y reacciones de cautela que generan los estímulos nuevos disminuyen" },
-      { "text": "Tendemos a procesar perceptiva y cognitivamente con mayor fluifez los estímulos nuevos", "correct": true },
-      { "text": "La mayor parte de encuentros sociales son moderadamente positivos a nivel afectivo" }
+      { "text": "La incertidumbre y reacciones de cautela que generan los estímulos nuevos disminuyen a medida que la exposición repetida a ellos muestra que son benignos" },
+      { "text": "Tendemos a procesar perceptiva y cognitivamente con mayor fluidez los estímulos nuevos" },
+      { "text": "La mayor parte de nuestros encuentros sociales son moderadamente positivos a nivel afectivo (o al menos no son aversivos)", "correct": true }
     ]
   },
   {
@@ -176,7 +176,7 @@
     },
     "responses": [
       { "text": "Representan dos facetas del ser humano, la prosocial y la antisocial, que son incompatibles entre sí" },
-      { "text": "Tienen un origen innato, por lo que las personas, desde que nacen tienden a una u otra independientemente de la situacion" },
+      { "text": "Tienen un origen innato, por lo que las personas, desde que nacen tienden a una u a la otra, independientemente de la situación" },
       { "text": "Tienen bastantes aspectos en común, de tipo cognitivo, motivacional y en cuanto a las consecuencias de la conducta", "correct": true }
     ]
   },
@@ -224,35 +224,35 @@
   },
   {
     "text":
-    "El fenómeno conocido como ignorancia pluralizada Se produce sobre todo en situaciones en las qué",
+    "El fenómeno conocido como ignorancia pluralizada se produce sobre todo en situaciones en las que",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
       "modelo": "1"
     },
     "responses": [
-      { "text": "Es evidente que una persona necesita ayuda y hay varias observando" },
+      { "text": "Es evidente que una persona necesita ayuda y hay varias personas observando" },
       { "text": "Es evidente que una persona necesita ayuda y solo hay una persona observando" },
       { "text": "Hay cierto grado de ambigüedad y varias personas observando", "correct": true }
     ]
   },
   {
     "text":
-    "De acuerdo con el modelo de prejuicio sutil y manifiesto (Pettigrew y Meertens, 1995) una de las diferencia que existe entre los racistas sutiles y los tradicionales es que",
+    "De acuerdo con el modelo de prejuicio sutil y manifiesto (Pettigrew y Meertens, 1995) una de las diferencias que existen entre los racistas sutiles y los tradicionales es que",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
       "modelo": "1"
     },
     "responses": [
-      { "text": "Lo primeros (sutiles) expresan sentimientos positivos hacia las minorías, pero los segundos no lo hacen" },
-      { "text": "Los primeros (sutiles) evitan expresar emociones abiertamente hostiles hacia las minorías", "correct": true },
-      { "text": "Los primeros creen en la inferioridad genética de las minorías" }
+      { "text": "Lo primeros (sutiles) expresan sentimientos positivos hacia las minorías, pero los segundos (los tradicionales) no lo hacen" },
+      { "text": "Los primeros (sutiles) evitan expresar emociones abiertamente hostiles hacia las minorías, mientras que los segundos (los tradicionales) expresan de forma abierta su prejuicio", "correct": true },
+      { "text": "Los primeros (sutiles) creen en la inferioridad genética de las minorías, mientras que los segundos (los tradicionales) perciben una inferioridad cultural" }
     ]
   },
   {
     "text":
-    "Considerando que el prejuicio es una actitud, el objetivo actitudinal sería",
+    "Considerando que el prejuicio es una actitud, el objeto actitudinal sería",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -294,7 +294,7 @@
   },
   {
     "text":
-    "Cual de los siguientes procesos está en la base del conflicto entre grupos segun la teoria del conflicto realista",
+    "¿Cuál de los siguientes procesos está en la base del conflicto entre grupos segun la teoría del conflicto realista?",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -302,13 +302,13 @@
     },
     "responses": [
       { "text": "La categorización social" },
-      { "text": "La interdependencia negativa" },
-      { "text": "El contacto intergrupal", "correct": true }
+      { "text": "La interdependencia negativa", "correct": true },
+      { "text": "El contacto intergrupal" }
     ]
   },
   {
     "text":
-    "En el desarrollo personal del altruismo y la conducta pro social intervienen fundamentalmente tres procesos básicos : la maduración socio-cognitiva, la socialización y",
+    "En el desarrollo personal del altruismo y la conducta prosocial intervienen fundamentalmente tres procesos básicos: la maduración socio-cognitiva, la socialización y",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -350,7 +350,7 @@
   },
   {
     "text":
-    "Los estudios psicosociales sobre bullying han encontrado que los niños que presencian episodios de acoso con frecuencia mantienen actitudes personales contrarias a este tipo de acciones ¿cuál de estos procesos NO sería relevante para explicar esta paradoja?",
+    "Los estudios psicosociales sobre bullying han encontrado que los niños que presencian episodios de acoso con frecuencia mantienen actitudes personales contrarias a este tipo de acciones, y sin embargo no ayudan a la víctima e, incluso, llegan a apoyar al acosador. ¿Cuál de los siguientes procesos NO sería relevante para explicar esta paradoja?",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -413,9 +413,9 @@
       "modelo": "1"
     },
     "responses": [
-      { "text": "La autoesteropia tiene un efecto más fuerte que la discriminación en adultos mayores", "correct": true },
-      { "text": "La autoestima influye en la esperanza de vida de los adultos" },
-      { "text": "La discriminación hacia las personas mayores es mayor cuando éstas rechazan estereotipos que cuando no los hace" }
+      { "text": "La autoestereotipia tiene un efecto más fuerte que la discriminación en la esperanza de vida de los adultos mayores" },
+      { "text": "La autoestereotipia influye en la esperanza de vida de los adultos mayores independientemente de otros factores como el género, la etnia o la sensación de soledad", "correct": true },
+      { "text": "La discriminación hacia las personas mayores es mayor cuando éstas rechazan estereotipos que cuando los aceptan" }
     ]
   },
   {
@@ -427,7 +427,7 @@
       "modelo": "1"
     },
     "responses": [
-      { "text": "Centrarse en el análisis de la situación que demananda la modificación y tratar de distanciarse", "correct": true },
+      { "text": "Centrarse en el análisis de la situación que demanda modificación y tratar de distanciarse de los puntos de vista tradicionales", "correct": true },
       { "text": "Tomar partido por su cliente y asumir sus reivindicaciones" },
       { "text": "Promover la causa de sus clientes, generalmente en contra de sus adversarios" }
     ]
@@ -448,7 +448,7 @@
   },
   {
     "text":
-    "Si hiciéramos un experimento en el que introdujésemos de repente humo en una sala donde los participantes (ajenos al objetivo y procedimiento) estuvieran sentados esperando, ¿cuando sería mas probable que saliesen de la sala para avisar de la presencia de humo?",
+    "Si hiciéramos un experimento en el que introdujésemos de repente humo en una sala donde los participantes (ajenos al objetivo y procedimiento del estudio) estuvieran sentados esperando, ¿cuándo sería mas probable que saliesen de la sala para avisar de la presencia de humo?",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -457,7 +457,7 @@
     "responses": [
       { "text": "Cuando en la sala hubiese un único participante esperando", "correct": true },
       { "text": "Cuando en la sala hubiese tres participantes juntos esperando" },
-      { "text": "Cuando en la sala hubiese 1 participante junto con 2 cómplices de los experimentos que se comportasen como si nada" }
+      { "text": "Cuando en la sala hubiese un participante junto con dos cómplices de los experimentadores que se comportasen como si no pasara nada" }
     ]
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "text":
-    "El término contacto extendido se refiere al caso en que una persona",
+    "El término 'contacto extendido' se refiere al caso en que una persona",
     "fecha": {
       "mes": "Junio",
       "year": "2020",
@@ -486,6 +486,34 @@
       { "text": "Mantiene un mayor numero de contactos con miembros de un mismo exogrupo" },
       { "text": "Mantiene contactos con miembros de distintos grupos" },
       { "text": "Sabe que existe una relación cercana y positiva entre miembros del propio grupo y del exogrupo", "correct": true }
+    ]
+  },
+  {
+    "text":
+    "Si una persona española cree que la mayoría de suecos son personas frías, rubias y trabajadoras, estaríamos hablando de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Homogeneización endogrupal" },
+      { "text": "Un estereotipo", "correct": true },
+      { "text": "Una discriminación" }
+    ]
+  },
+  {
+    "text":
+    "La investigación de Cuddy y cols. (2005) sobre el contenido del estereotipo de los adultos mayores encontró que, cuando se afirmaba que una persona mayor posee buena memoria",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Se la percibía como más competente" },
+      { "text": "La percepción de su competencia no se veía afectada", "correct": true },
+      { "text": "Se la percibía como menos competente" }
     ]
   }
 ]

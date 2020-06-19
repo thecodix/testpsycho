@@ -23,14 +23,31 @@
 
             <!--options-->
             <div class="optionContainer">
-              <a class="button actionButton option"
-                 v-on:click="chooseSubject(social)">
-                Psicología Social
-              </a>
-              <a class="button actionButton option"
-                 v-on:click="chooseSubject(emocion)">
-                Psicología de la Emoción
-              </a>
+              <b-form-group id="input-group-4">
+                <b-button-group vertical v-model="form.buttons4" id="buttons4" size="sm">
+                  <b-button
+                    id="but-social"
+                    variant="primary"
+                    class="button actionButton"
+                    v-on:click="chooseSubject(social)">
+                    Psicología Social
+                  </b-button>
+                  <b-button
+                    id="but-emocion"
+                    variant="primary"
+                    class="button actionButton"
+                    v-on:click="chooseSubject(emocion)">
+                    Psicología de la Emoción
+                  </b-button>
+                  <b-button
+                    id="but-atencion"
+                    variant="primary"
+                    class="button actionButton"
+                    v-on:click="chooseSubject(atencion)">
+                    Psicología de la Atención
+                  </b-button>
+                </b-button-group>
+              </b-form-group>
             </div>
             <!--/options-->
 
@@ -163,13 +180,19 @@
 </template>
 
 <script>
+import { BButton } from 'bootstrap-vue/esm/components/button';
+import { BFormGroup } from 'bootstrap-vue/esm/components/form-group';
+import { BButtonGroup } from 'bootstrap-vue/esm/components/button-group';
 import EXAM_SOCIAL_JSON from './json/social2pp.json';
+import EXAM_ATENCION_JSON from './json/atencion.json';
 import EXAM_EMOCION_JSON from './json/emocion.json';
 
 const numQuestions = 2;
 
 export default {
-  // el: '#app',
+  components: {
+    BButton, BButtonGroup, BFormGroup,
+  },
   data() {
     return {
       chosenQuiz: false,
@@ -196,8 +219,17 @@ export default {
         plusScore: 0.25,
         minusScore: 0.25,
       },
+      atencion: {
+        title: 'P. de la Atención',
+        jsonFile: EXAM_ATENCION_JSON,
+        numQuestions: 20,
+        time: 30 * 60, // in seconds
+        plusScore: 0.5,
+        minusScore: 0.25,
+      },
       questionIndex: 0,
       userResponses: Array(numQuestions).fill(null),
+      rightWrong: Array(numQuestions).fill(null),
       isActive: false,
       form: {
         selected: '',
@@ -230,6 +262,7 @@ export default {
         .sort(() => Math.random() - 0.5)
         .slice(0, subject.numQuestions);
       this.userResponses = Array(subject.numQuestions).fill(null);
+      this.rightWrong = Array(subject.numQuestions).fill(null);
       this.time = subject.time;
       this.corrects = 0;
       this.incorrects = 0;
@@ -238,25 +271,12 @@ export default {
       this.minusScore = subject.minusScore;
     },
     selectOption(index, response) {
-      if (this.userResponses[this.questionIndex] !== null
-        && this.userResponses[this.questionIndex] !== index) {
-        if (response.correct) {
-          this.corrects += 1;
-          this.incorrects -= 1;
-        } else {
-          this.corrects -= 1;
-          this.incorrects += 1;
-        }
-      } else if (this.userResponses[this.questionIndex] !== index) {
-        if (response.correct) {
-          this.corrects += 1;
-        } else {
-          this.incorrects += 1;
-        }
-      }
+      // TODO: fix changing wrong answer to wrong answer
+      this.rightWrong[this.questionIndex] = response.correct === true;
+      this.corrects = this.rightWrong.reduce((n, val) => n + (val === true), 0);
+      this.incorrects = this.rightWrong.reduce((n, val) => n + (val === false), 0);
       // eslint-disable-next-line no-undef
       Vue.set(this.userResponses, this.questionIndex, index);
-      // console.log(this.userResponses);
     },
     next() {
       if (this.questionIndex < this.quiz.questions.length) {
@@ -557,7 +577,8 @@ export default {
   }
   .actionButton:hover {
     cursor: pointer;
-    background: #6298c7;
+    background: #e3e7ea;
+    color: black;
     border-color: rgba(0, 0, 0, 0.25);
   }
 

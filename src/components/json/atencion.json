@@ -1,0 +1,262 @@
+[
+  {
+    "text": "¿Qué técnica elegiría para estudiar la señalización crossmodal evitando, a su vez, los efectos de la predisposición de respuesta?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Escucha dicótica" },
+      { "text": "Señalización ortogonal", "correct": true },
+      { "text": "Detección del estímulo sonda (probe-signal paradigm)" }
+    ]
+  },
+  {
+    "text": "Un instrumento de medida de la carga mental es […], cuando refleja no solamente los cambios generales de carga, sino también la carga impuesta a cada una de las diversas capacidades cognitivas del operador:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Fiable" },
+      { "text": "Sensible" },
+      { "text": "Diagnóstico", "correct": true }
+    ]
+  },
+  {
+    "text": "Leibniz (1646-1716) fue el responsable de introducir:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El concepto de atención entendido como medio para hacer las ideas claras y distintivas." },
+      { "text": "Las vinculaciones entre atención y memoria" },
+      { "text": "El concepto de apercepción", "correct": true }
+    ]
+  },
+  {
+    "text": "Paradigma que permite analizar el “coste residual” al ejecutar tareas sucesivas:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Doble tarea (dual-task paradigm)" },
+      { "text": "Cambio de tarea (task-switching paradigm)", "correct": true },
+      { "text": "Presentación rápida de series visuales" }
+    ]
+  },
+  {
+    "text": "El modelo de filtro de Broadbent (1958) postula:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Una selección temprana de la información", "correct": true },
+      { "text": "La existencia de un filtro atenuado" },
+      { "text": "Una selección tardía de la información" }
+    ]
+  },
+  {
+    "text": "¿Qué tipo de disposiciones tienden a ocasionar respuestas lentas?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Las perceptivas", "correct": true },
+      { "text": "Las motoras" },
+      { "text": "Las perceptivas y las motoras" }
+    ]
+  },
+  {
+    "text": "¿Cuál de los siguientes componentes no forma parte del modelo de memoria operativa de Baddeley y Hitch (1974)?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Agenda visoespacial" },
+      { "text": "Bucle fonológico" },
+      { "text": "Almacén a largo plazo", "correct": true }
+    ]
+  },
+  {
+    "text": "Para la teoría de la información existe información:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Cuando existe absoluta certeza sobre lo que va a suceder." },
+      { "text": "Siempre que haya una cierta incertidumbre sobre lo que va a suceder.", "correct": true },
+      { "text": "En cualquier situación, con independencia del grado de incertidumbre sobre lo que va a suceder." }
+    ]
+  },
+  {
+    "text": "El test de los seis elementos (SET) permite explorar:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La atención dividida" },
+      { "text": "El control de objetivos y la planificación.", "correct": true },
+      { "text": "El periodo refractario psicológico." }
+    ]
+  },
+  {
+    "text": "El estudio de la memoria sensorial ha puesto de manifiesto que el efecto de superioridad del informe parcial sobre el informe total:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Es exclusivo de la memoria icónica" },
+      { "text": "Es exclusivo de la memoria ecoica" },
+      { "text": "Se presenta tanto en memoria icónica como en la ecoica.", "correct": true }
+    ]
+  },
+  {
+    "text": "En una tarea de TR en la que la precisión de la respuesta es ya moderadamente elevada, esta precisión sólo podrá ser incrementada:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Disminuyendo el TR" },
+      { "text": "Manteniendo constante el TR" },
+      { "text": "Aumentando el TR.", "correct": true }
+    ]
+  },
+  {
+    "text": "En el estudio de la memoria icónica se encuentra que la vida media del almacén de memoria visual es:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Inferior a un segundo", "correct": true },
+      { "text": "Superior a un segundo e inferior a dos" },
+      { "text": "Superior a dos segundos" }
+    ]
+  },
+  {
+    "text": "Utilizando un procedimiento de amplitud de memoria dividida (split-span), Broadbent (1954) demostró que los sujetos recordaban:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Primero el mensaje presentado en un oído y luego el del oído alternativo.", "correct": true },
+      { "text": "Exclusivamente el mensaje de un oído, siendo incapaces de recordar el del alternativo." },
+      { "text": "Los mensajes de ambos oídos al azar" }
+    ]
+  },
+  {
+    "text": "Si se incrementa la distancia entre target y flancos más allá de un grado de ángulo visual, el efecto de compatibilidad de flancos:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Disminuye", "correct": true },
+      { "text": "Aumenta" },
+      { "text": "No varía" }
+    ]
+  },
+  {
+    "text": "Al indicar que la atención selectiva visual sirve para hacernos conscientes de la presencia de objetos o eventos, hacemos referencia a la selección para:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La percepción" },
+      { "text": "La consciencia", "correct": true },
+      { "text": "La acción" }
+    ]
+  },
+  {
+    "text": "¿Cómo se denomina la inhibición que puede aparecer como efecto colateral durante un proceso cognitivo en curso?:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Neurológica" },
+      { "text": "Conductual" },
+      { "text": "Reactiva", "correct": true }
+    ]
+  },
+  {
+    "text": "El sombreado (shadowing) es una técnica que permite estudiar la:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Atención dividida" },
+      { "text": "Atención sostenida" },
+      { "text": "Atención selectiva", "correct": true }
+    ]
+  },
+  {
+    "text": "Durante la ejecución de una tarea principal afectada por carga mental, ¿cómo afecta la 'protección del desempeño'? ",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Propiciaría los errores" },
+      { "text": "Impediría los errores", "correct": true },
+      { "text": "No ejercería influencia" }
+    ]
+  },
+  {
+    "text": "PEC 1 (Atención abierta y movimientos oculares): En un hipotético scan-path se han producido 21 fijaciones. ¿Cuál será el número de transiciones?:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "21" },
+      { "text": "20", "correct": true },
+      { "text": "22" }
+    ]
+  },
+  {
+    "text": "PEC 2 (Análisis de un artículo científico): La tarea de Stroop numérico puso de relieve la existencia de efectos de facilitación en:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La condición congruente", "correct": true },
+      { "text": "La condición incongruente" },
+      { "text": "Cualesquiera de las condiciones experimentales" }
+    ]
+  }
+]
