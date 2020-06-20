@@ -1,0 +1,554 @@
+[
+  {
+    "text": "La función social de las emociones tiene el propósito de:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Comunicar a otros nuestro estado de ánimo", "correct": true },
+      { "text": "Preparan el organismo para compensación interpersonal" }
+    ]
+  },
+  {
+    "text": "La valencia afectiva nos permite diferenciar las emociones en función de:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Que su tono hedónico sea positivo o negativo", "correct": true },
+      { "text": "La intensidad de los cambios fisiológicos" }
+    ]
+  },
+  {
+    "text": "Las emociones primarias:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "A cada una de ellas le corresponde una función adaptativa", "correct": true },
+      { "text": "Tienen que ver con una reacción específica para cada persona" }
+    ]
+  },
+  {
+    "text": "En la respuesta de ansiedad, la hipervigilancia se debe a la acción de la amígdala sobre",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El hipotálamo cerebral" },
+      { "text": "Los núcleos del tronco cerebral", "correct": true }
+    ]
+  },
+  {
+    "text": "Los tipos de estímulos desencadenantes de la ansiedad son",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Reacciones aprendidas y anticipadas de amenaza", "correct": true },
+      { "text": "Situaciones que pueden dañar directamente al individuo" }
+    ]
+  },
+  {
+    "text": "El afrontamiento emocional hace referencia a los cambios",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "En los comportamientos que producen las emociones y que hacen que las personas se preparen para la acción", "correct": true },
+      { "text": "En la percepción de las acciones" }
+    ]
+  },
+  {
+    "text": "Lazarus y Smith (1993) para validar las dimensiones de valoración emocional, utilizan la siguiente estrategia de investigación",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Demanda de respuestas imaginadas ante narraciones de situaciones emocionales", "correct": true },
+      { "text": "Presentación de fotografías para el reconocimiento de la expresión facial" }
+    ]
+  },
+  {
+    "text": "La reacción proactiva de la ansiedad significa que",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La persona actúa directamente sobre el estímulo que provocó la ansiedad" },
+      { "text": "Los recursos de afrontamiento se movilizan antes de que la amenaza se haya cumplido", "correct": true }
+    ]
+  },
+  {
+    "text": "La preocupación en el proceso de la ansiedad cumple la función de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Neutralizar las reacciones fisiológicas" },
+      { "text": "Intervenir en el afrontamiento como elemento motivador de las acciones a tomar", "correct": true }
+    ]
+  },
+  {
+    "text": "El trabajo sobre feedback facial de Strack, Martin y Stepper (1988) donde los sujetos al realizar una tarea de visualización y evaluación de la comicidad de unas viñetas, sostenían un lápiz, bien con los labios o bien con los dientes concluye que",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La evaluación de diversión al ver los cómics era igual en ambas formas de sostener el lápiz" },
+      { "text": "La pose facial determina la intensidad del estado afectivo", "correct": true }
+    ]
+  },
+  {
+    "text": "El grado de infusión del afecto depende del:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Grado de implicación personal" },
+      { "text": "Tipo de procesamiento utilizado", "correct": true }
+    ]
+  },
+  {
+    "text": "La evitación cognitiva como forma de afrontamiento en la ansiedad consiste en",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Redirigir la atención fuera de las condiciones amenazantes", "correct": true },
+      { "text": "Orientar la atención hacia las amenazas del entorno" }
+    ]
+  },
+  {
+    "text": "Por la forma de afrontar la ansiedad las personas represoras se caracterizan por",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Alta vigilancia y una baja evitacion cognitiva" },
+      { "text": "Baja vigilancia y alta evitacion", "correct": true }
+    ]
+  },
+  {
+    "text": "Sobre las emociones, una de las predicciones más importantes de Darwin (1872) es que",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Las emociones son producto de la filogenia", "correct": true },
+      { "text": "Para cada cultura las emociones evolucionan de forma distinta" }
+    ]
+  },
+  {
+    "text": "Las sensaciones gastrointestinales desagradables, tales como náuseas, pueden aparecer en la emoción de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Sorpresa" },
+      { "text": "Asco", "correct": true }
+    ]
+  },
+  {
+    "text": "Las instrucciones en los experimentos de procesamiento implícito emocional deben dirigir la atención de los participantes hacia",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Características no emocionales de los estímulos presentados en esa fase" },
+      { "text": "El contenido emocional de los estímulos presentados en esa fase", "correct": true }
+    ]
+  },
+  {
+    "text": "Según Gray (1979,1987) los estímulos que los animales y el hombre aprenden que son peligrosos, estarían clasificados dentro de la categoría",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Estímulos procedentes de interacciones sociales" },
+      { "text": "Estímulos atemorizantes condicionados", "correct": true }
+    ]
+  },
+  {
+    "text": "El procesamiento implicito emocional previo a la realización de una tarea, puede tener influencia en la misma:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Falso" },
+      { "text": "Verdadero", "correct": true }
+    ]
+  },
+  {
+    "text": "La pérdida de la capacidad para identificar el tipo de emoción que el interlocutor está expresando es un factor asociado a:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Los estados depresivos", "correct": true },
+      { "text": "La ansiedad" }
+    ]
+  },
+  {
+    "text": "El procesamiento implícito emocional es:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Involuntario", "correct": true },
+      { "text": "Voluntario" }
+    ]
+  },
+  {
+    "text": "Lo imprevisto, novedoso o extraño produce la emoción de:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Sorpresa", "correct": true },
+      { "text": "Ira" }
+    ]
+  },
+  {
+    "text": "De acuerdo con el modelo de Schwarz y Clore, utilizamos nuestro estado afectivo como un heurístico o atajo cognitivo de manera que permite:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Recordar emociones pasadas" },
+      { "text": "Simplificar el proceso de razonamiento", "correct": true }
+    ]
+  },
+  {
+    "text": "En la emoción de asco el principio de contagio de Frazer se puede resumir como",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "'Una vez en contacto, siempre en contacto'", "correct": true },
+      { "text": "'La imagen igual al objeto'" }
+    ]
+  },
+  {
+    "text": "Las emociones positivas promueven la flexibilidad cognitiva, facilitando:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La ambigüedad y la decisión en la toma de decisiones" },
+      { "text": "La asociación de ideas y el establecimiento de relaciones novedosas entre estímulos", "correct": true }
+    ]
+  },
+  {
+    "text": "Según Angyal (1941) el principal estímulo elicitador del asco es",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El contacto con ciertos animales como las cucarachas" },
+      { "text": "Los desechos (basuras) del cuerpo como las heces", "correct": true }
+    ]
+  },
+  {
+    "text": "Las teorias télicas estan relacionadas con la emoción de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Felicidad", "correct": true },
+      { "text": "Amor" }
+    ]
+  },
+  {
+    "text": "Limpiar el sistema nervioso de la actividad que pudiera interferir con el ajuste a un cambio imprevisto en nuestro medio ambiente, es una función de la emoción de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Miedo" },
+      { "text": "Sorpresa", "correct": true }
+    ]
+  },
+  {
+    "text": "Las emociones de culpa y vergüenza se diferencian en",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Conllevan diferentes tendencias de acción", "correct": true },
+      { "text": "La culpa es secundaria y la vergüenza es primaria" }
+    ]
+  },
+  {
+    "text": "Es destacable en el modelo de investigación en emociones de Arne Ohman que",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Postula que las emociones tendrian origenes no conscientes o preatencionales", "correct": true },
+      { "text": "Utiliza el paradigma del condicionamiento instrumental skinneriano" }
+    ]
+  },
+  {
+    "text": "La hipótesis del efecto de mera exposición propone que:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Activa una evaluación negativa hacia dicho objeto" },
+      { "text": "La exposición repetida a un objeto mejora la actitud que tenemos hacia él", "correct": true }
+    ]
+  },
+  {
+    "text": "En el embarrassment",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Las experiencias implican mayor sensación de transgresión moral que las de shame" },
+      { "text": "Es la más social de todas las emociones autoconscientes", "correct": true }
+    ]
+  },
+  {
+    "text": "Inhibir las conductas indeseables de otras personas es función de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Ira", "correct": true },
+      { "text": "Tristeza" }
+    ]
+  },
+  {
+    "text": "El objetivo de los teóricos del appraisal, en el estudio de la emoción, es:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Encontrar distintas configuraciones de cambios corporales periféricos" },
+      { "text": "Encontrar configuraciones de patrones de valoración específicos para los estados emocionales distintivos", "correct": true }
+    ]
+  },
+  {
+    "text": "La emoción que implica una tendencia a la reparación de la acción es",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La culpa", "correct": true },
+      { "text": "La vergüenza" }
+    ]
+  },
+  {
+    "text": "La emoción que se desencadena cuando la valoración congnitiva lleva a la persona a concluir que la meta perdida no puede ser restaurada mediante un plan de acción preciso es la",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Tristeza", "correct": true },
+      { "text": "Ira" }
+    ]
+  },
+  {
+    "text": "Entre los efectos subjetivos de la emocion de miedo están:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El de mente en blanco" },
+      { "text": "La sensación de desasosiego y malestar", "correct": true }
+    ]
+  },
+  {
+    "text": "El Priming afectivo se ha interpretado como un proceso involuntario y es un dato de las tesis de que el procesamiento emocional es",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Controlado" },
+      { "text": "Automático", "correct": true }
+    ]
+  },
+  {
+    "text": "El paradigma de transferencia de excitación de Dolf Zillmann como método de investigación se encuadra dentro de",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Los planteamientos bifactoriales", "correct": true },
+      { "text": "Los aspectos expresivos de la emoción" }
+    ]
+  },
+  {
+    "text": "Desde un enfoque cognitivo, la emoción de alegría surge cuando:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La persona evalúa el objeto o acontecimiento como favorable a la consecución de sus metas", "correct": true },
+      { "text": "Coinciden los pensamientos de la persona con su estado de ánimo" }
+    ]
+  },
+  {
+    "text": "La teoría emergentista de las emociones de Cannon:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Los cambios corporales son los antecedentes causales de la emoción" },
+      { "text": "Los cambios corporales no son determinantes de la experiencia emocional", "correct": true }
+    ]
+  },
+  {
+    "text": "Los datos de la investigación del condicionamiento del miedo en humanos informan que la amígdala",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Almacena el contenido de las experiencias emocionales" },
+      { "text": "Participa en la evaluación afectiva de estímulos relacionados con la amenaza o el peligro", "correct": true }
+    ]
+  },
+  {
+    "text": "La depresión se ha considerado como",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Una emoción primaria" },
+      { "text": "Una manisfestacion patológica de la emoción de tristeza", "correct": true }
+    ]
+  },
+  {
+    "text": "La consistencia metodológica en los estudios transculturales sobre la expresión y reconocimiento facial de emociones, requieren que los juicios de reconocimiento sean realizados por:",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Personas que pertenezcan a una etnia diferente a la de las personas que posan", "correct": true },
+      { "text": "Individuos con experiencia previa en la tarea" }
+    ]
+  },
+  {
+    "text": "En el modelo de chequeos secuenciales para la diferenciación de emociones, ¿qué función cumple el subsistema de acción?",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Decide prepara y dirige las diferentes acciones a tomar" },
+      { "text": "Comunicativa informando sobre la reacción y las intenciones conductuales", "correct": true }
+    ]
+  },
+  {
+    "text": "Atendiendo al modelo de Lewis (2000) de las emociones autoconscientes, la culpa es elicitada por",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Una evaluación negativa focalizada en la acción", "correct": true },
+      { "text": "Una evaluación negativa del yo de carácter global" }
+    ]
+  },
+  {
+    "text": "Culpa, vergüenza y orgullo son emociones que se caracterizan porque",
+    "fecha": {
+      "mes": "Junio",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "En todas subyace algún tipo de evaluación relativa al yo", "correct": true },
+      { "text": "Son emociones primarias" }
+    ]
+  }
+]

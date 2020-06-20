@@ -183,10 +183,15 @@
 import { BButton } from 'bootstrap-vue/esm/components/button';
 import { BFormGroup } from 'bootstrap-vue/esm/components/form-group';
 import { BButtonGroup } from 'bootstrap-vue/esm/components/button-group';
-import EXAM_SOCIAL_JSON from './json/social2pp.json';
-import EXAM_ATENCION_JSON from './json/atencion.json';
-import EXAM_EMOCION_JSON from './json/emocion.json';
+import ATE_JUN_20 from './json/atencion/atencion_jun_20.json';
+import EM_JUN_20 from './json/emocion/emocion_jun_20.json';
+import EM_SEP_19 from './json/emocion/emocion_sep_19.json';
+import SOC_JUN_20 from './json/social/social_jun_20.json';
+import SOC_SIM_20 from './json/social/social_simulacro2p_20.json';
 
+const EXAMENES_ATENCION = [ATE_JUN_20];
+const EXAMENES_EMOCION = [EM_JUN_20, EM_SEP_19];
+const EXAMENES_SOCIAL = [SOC_JUN_20, SOC_SIM_20];
 const numQuestions = 2;
 
 export default {
@@ -205,7 +210,7 @@ export default {
       },
       social: {
         title: 'Psicología Social',
-        jsonFile: EXAM_SOCIAL_JSON,
+        examNames: EXAMENES_SOCIAL,
         numQuestions: 20,
         time: 40 * 60, // in seconds
         plusScore: 0.45,
@@ -213,7 +218,7 @@ export default {
       },
       emocion: {
         title: 'P. de la Emoción',
-        jsonFile: EXAM_EMOCION_JSON,
+        examNames: EXAMENES_EMOCION,
         numQuestions: 40,
         time: 20 * 60, // in seconds
         plusScore: 0.25,
@@ -221,7 +226,7 @@ export default {
       },
       atencion: {
         title: 'P. de la Atención',
-        jsonFile: EXAM_ATENCION_JSON,
+        examNames: EXAMENES_ATENCION,
         numQuestions: 20,
         time: 30 * 60, // in seconds
         plusScore: 0.5,
@@ -258,7 +263,8 @@ export default {
     chooseSubject(subject) {
       this.chosenQuiz = true;
       this.title = subject.title;
-      this.quiz.questions = subject.jsonFile
+      const exams = subject.examNames[0].concat(subject.examNames[1]);
+      this.quiz.questions = exams
         .sort(() => Math.random() - 0.5)
         .slice(0, subject.numQuestions);
       this.userResponses = Array(subject.numQuestions).fill(null);

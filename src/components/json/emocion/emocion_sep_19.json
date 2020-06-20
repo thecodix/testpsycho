@@ -1,0 +1,482 @@
+[
+  {
+    "text": "La alostasis, como mecanismo de la regulación fisiológica, tiene el propósito de:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Mantener cada parámetro del organismo en un nivel óptimo" },
+      { "text": "Predecir el nivel de activación necesario basándose en la anticipación de las demandas del organismo", "correct": true }
+    ]
+  },
+  {
+    "text": "En la explicación de la emoción, ¿qué postulado comparten la teoría bifactorial de la emoción y la teoría de la evaluación-discrepancia?:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La activación fisiológica determina la cualidad emocional." },
+      { "text": "La activación fisiológica tiene un carácter indiferenciado.", "correct": true }
+    ]
+  },
+  {
+    "text": "Atendiendo a los resultados obtenidos en la investigación con monos, se puede afirmar que el córtex orbitofrontal está relacionado con:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La inhibición de la respuesta a estímulos aversivos." },
+      { "text": "La adaptación de la conducta en función del significado emocional de los estímulos.", "correct": true }
+    ]
+  },
+  {
+    "text": "En el modelo de chequeos secuenciales para la diferenciación de emociones, ¿qué función cumple el subsistema de acción?",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Comunicativa, informando sobre la reacción y las intenciones conductuales.", "correct": true },
+      { "text": "Decide, prepara y dirige las diferentes acciones a tomar." }
+    ]
+  },
+  {
+    "text": "El procesamiento emocional utiliza también otros procesos psicológicos",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Según Stemmler (2003) todas las emociones cumplen una serie de tareas, entre las que está:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La del refocalizado de la atención.", "correct": true },
+      { "text": "La de la regulación explícita." }
+    ]
+  },
+  {
+    "text": "El que la emoción determine la aparición de una conducta, la dirija hacia determinada meta y haga que se ejecute con un cierto grado de intensidad, corresponde con la función:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Social." },
+      { "text": "Motivacional.", "correct": true }
+    ]
+  },
+  {
+    "text": "El humor o tono emocional de base tiene una duración",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Similar a la de la emoción." },
+      { "text": "Mayor que la emoción.", "correct": true }
+    ]
+  },
+  {
+    "text": "Charles Darwin en 1872 sugiere que la expresión abierta de una emoción por medio de signos externos la intensifica:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Los estudios realizados en torno a la hipótesis de feedback facial, han intentado obtener datos sobre la importancia de la configuración facial para explicar la cualidad y la intensidad de nuestra experiencia emocional:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "El paradigma de transferencia de excitación, desarrollado originalmente por Dolf Zillmann, constituye esencialmente una aplicación de los supuestos de Schachter a estados de arousal que ocurren secuencialmente:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Una estrategia de investigación utilizada por los teóricos del appraisal para encontrar configuraciones de patrones de valoración específicos para los estados emocionales, es recoger información respecto al modo en que los participantes creen que están presentes las valoraciones en situaciones emocionales que no han vivido realmente:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Una de las limitaciones del modelo de redes asociativas es que no diferencia entre emoción fría y caliente:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "El paradigma de infusión del afecto postula que la relación entre estado afectivo y cognición:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Es independiente del tipo de emoción que defina el estado afectivo." },
+      { "text": "Depende del estilo de procesamiento utilizado.", "correct": true }
+    ]
+  },
+  {
+    "text": "En la toma de decisiones, el afecto positivo nos hace más indecisos:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero." },
+      { "text": "Falso.", "correct": true }
+    ]
+  },
+  {
+    "text": "El priming afectivo es un tipo de procesamiento consciente:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero." },
+      { "text": "Falso.", "correct": true }
+    ]
+  },
+  {
+    "text": "Uno de los argumentos más sólidos en defensa de la automaticidad del procesamiento emocional está basado en:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El carácter adaptativo de las emociones.", "correct": true },
+      { "text": "La independencia de los procesos afectivos." }
+    ]
+  },
+  {
+    "text": "En varias teorías de la emoción ha sido resaltada la neutralidad hedónica de la emoción de:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Asco." },
+      { "text": "Sorpresa.", "correct": true }
+    ]
+  },
+  {
+    "text": "Una forma de afrontamiento del asco es el distanciamiento acompañado por una expulsión de los estímulos aversivos:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "El asco es una compleja emoción que probablemente tiene vínculos con los estados fóbicos:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "La transmisión social, a través de la cultura, es una vía de aprendizaje de estímulos elicitadores de miedo:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Un estilo explicativo pesimista lleva a la persona a creer que las contingencias afortunadas positivas que se le plantean en la vida son debidas a factores sobre los que tiene poco o ningún control:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "En los estados depresivos:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Se desarrolla una habilidad especial para poder identificar aquellas circunstancias que elicitan dicho estado emocional." },
+      { "text": "Se ha observado un deterioro de la capacidad para identificar el tipo de emoción que el interlocutor está expresando.", "correct": true }
+    ]
+  },
+  {
+    "text": "La tristeza aparece en relación a situaciones o contingencias que:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Resultan extrañas a la persona." },
+      { "text": "No resultan extrañas a la persona.", "correct": true }
+    ]
+  },
+  {
+    "text": "La tristeza:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Impide la emergencia de otras emociones." },
+      { "text": "No impide la emergencia de otras emociones.", "correct": true }
+    ]
+  },
+  {
+    "text": "La preocupación constituye una tentativa de solucionar un problema, cuyo resultado es incierto y que contiene la posibilidad de una o más consecuencias negativas:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Atendiendo a los estilos de afrontamiento de la ansiedad, las personas altamente ansiosas se caracterizan porque dirigen su atención para obtener más información sobre la información amenazante:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  },
+  {
+    "text": "Los estímulos desencadenantes de la ansiedad son situaciones que producen frustración:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero." },
+      { "text": "Falso.", "correct": true }
+    ]
+  },
+  {
+    "text": "Una alta tolerancia tanto a la incertidumbre como a la activación fisiológica, es la forma de afrontar la ansiedad en las personas:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Represoras." },
+      { "text": "No defensivas.", "correct": true }
+    ]
+  },
+  {
+    "text": "En la ansiedad la movilización de los fenómenos de priorización y compensación, implica:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La reducción en la capacidad de la memoria operativa y el uso de recursos auxiliares.", "correct": true },
+      { "text": "La motivación explícita." }
+    ]
+  },
+  {
+    "text": "El procesamiento de la información estimular que provoca una respuesta de humor:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Es automático y no consciente." },
+      { "text": "Requiere una valoración consciente.", "correct": true }
+    ]
+  },
+  {
+    "text": "La actitud hostil por sí misma ¿tiene entidad como factor de riesgo de trastornos coronarios?",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Si, al margen de que sea un componente del patrón de conducta Tipo A.", "correct": true },
+      { "text": "No, su efecto como factor de riesgo se diluye si no va ligado a los componentes del patrón de conducta Tipo A." }
+    ]
+  },
+  {
+    "text": "En el estudio de la felicidad, la perspectiva hedónica asocia el bienestar con:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La consecución de metas y objetivos valiosos para la persona.", "correct": true },
+      { "text": "La consecución de los valores que nos hacen crecer como personas." }
+    ]
+  },
+  {
+    "text": "En la relación del bienestar asociado a la consecución de metas, uno de los elementos clave es:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La disponibilidad de bienes y recursos para alcanzar las metas." },
+      { "text": "La convergencia de las metas con los intereses y las necesidades de las personas.", "correct": true }
+    ]
+  },
+  {
+    "text": "En relación con la hostilidad, ¿qué significa que el procesamiento cognitivo de la novedad sea baja?",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El sujeto valora que las consecuencias pueden ser controladas." },
+      { "text": "Antes de que el suceso ocurriera ya se esperaban las consecuencias que éste acarrearía.", "correct": true }
+    ]
+  },
+  {
+    "text": "Sobre el embarrassment, ¿qué afirmación es correcta?",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Es la más social de todas las emociones autoconscientes.", "correct": true },
+      { "text": "Implica sensación de transgresión moral." }
+    ]
+  },
+  {
+    "text": "¿Qué emoción secundaria surge como consecuencia de la evaluación positiva de una acción propia?",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El hubris." },
+      { "text": "El orgullo.", "correct": true }
+    ]
+  },
+  {
+    "text": "Atendiendo al modelo de Lewis de las emociones autoconscientes, la vergüenza es elicitada por:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Una evaluación negativa focalizada en la acción." },
+      { "text": "Una evaluación negativa del yo de carácter global.", "correct": true }
+    ]
+  },
+  {
+    "text": "Los rasgos específicos de cada emoción autoconsciente vienen determinados por:",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Los procesos de evaluación y atribución interna de la conducta.", "correct": true },
+      { "text": "La atribución que el sujeto hace de la conducta y los estímulos que las elicitan." }
+    ]
+  },
+  {
+    "text": "La cognición se ha relacionado históricamente con el conocimiento y la experiencia (procesos voluntarios), mientras que la emoción se ha asociado a la experiencia subjetiva, y fuera del alcance volitivo (procesos automáticos).",
+    "fecha": {
+      "mes": "Septiembre",
+      "year": "2019",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "Verdadero.", "correct": true },
+      { "text": "Falso." }
+    ]
+  }
+]

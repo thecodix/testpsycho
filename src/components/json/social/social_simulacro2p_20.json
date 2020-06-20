@@ -1,0 +1,28 @@
+[
+  {
+    "text": "¿Cuál de los siguientes modelos teóricos explica mejor cómo se adquieren los comportamientos agresivos y cómo se mantienen en el repertorio conductual del individuo?",
+    "fecha": {
+      "mes": "Simulacro 2p",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "El modelo neoasociacionista cognitivo" },
+      { "text": "La teoría del aprendizaje social", "correct": true },
+      { "text": "La teoría de la frustración-agresión" }
+    ]
+  },
+  {
+    "text": "Entre los siguientes factores, ¿cuál de ellos constituye un factor de riesgo para el comportamiento agresivo?",
+    "fecha": {
+      "mes": "Simulacro 2p",
+      "year": "2020",
+      "modelo": "1"
+    },
+    "responses": [
+      { "text": "La presencia puntual de un revólver en una habitación" },
+      { "text": "El ruido excesivo procedente de la fiesta de un vecino" },
+      { "text": "La exposición a un ambiente familiar violento durante la infancia", "correct": true }
+    ]
+  }
+]
